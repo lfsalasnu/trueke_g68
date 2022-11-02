@@ -6,12 +6,13 @@ class Inicio_sesion extends Component{
     constructor(){
         super()
         this.state={
-            titulo:'',
-            descripcion:'',
-            prioridad:'baja',
-            numero:0,
-            responsable:'',
-            imagen:''
+            nombre:'',
+            apellido:'',
+            ciudad:'baja',
+            edad:0,
+            correo:'',
+            cont1:'',
+            cont2:''
         }
         this.ntarj=<h1>Hola</h1>;
         this.cambio=this.cambio.bind(this);

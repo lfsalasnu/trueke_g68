@@ -1,16 +1,16 @@
 import React,{Component} from "react";
-import Tarjetas from "./Tarjetas";
+import Tarjetas from "./Articulo";
 
 class Formulario extends Component{
     
     constructor(){
         super()
         this.state={
-            titulo:'',
+            nombre:'',
             descripcion:'',
-            prioridad:'baja',
-            numero:0,
-            responsable:'',
+            valor:'bajo',
+            cantidad:0,
+            usuario:'',
             imagen:''
         }
         this.ntarj=<h1>Hola</h1>;
@@ -36,32 +36,32 @@ class Formulario extends Component{
         return(
             <div>
             <div className="card w-50 m-auto bg-light mt-3">
-                <h1 className="mx-auto text-primary">Nueva Tarjeta</h1>
+                <h1 className="mx-auto text-primary">Nuevo Articulo</h1>
                 <form className="card-body">
                     <div className="form-group">
-                        <input onChange={this.cambio} type="text" name="titulo" className="form-control" placeholder="Titulo tarjeta" />
+                        <input onChange={this.cambio} type="text" name="nombre" className="form-control" placeholder="Nombre Articulo" />
                     </div>
                     <div className="form-group mt-3">
-                        <textarea onChange={this.cambio} type="text" name="descripcion" className="form-control" placeholder="Descripción tarjeta" rows={3}></textarea>
+                        <textarea onChange={this.cambio} type="text" name="descripcion" className="form-control" placeholder="Descripción Articulo" rows={3}></textarea>
                     </div>
                     <div className="form-group mt-3">
-                        <input onChange={this.cambio} type="text" name="responsable" className="form-control" placeholder="Responsable tarjeta" />
+                        <input onChange={this.cambio} type="text" name="usuario" className="form-control" placeholder="Usuario" />
                     </div>
                     <div className="form-group mt-3">
-                        <input onChange={this.cambio} type="number" name="numero" className="form-control" placeholder="numero tarjeta" />
+                        <input onChange={this.cambio} type="number" name="cantidad" className="form-control" placeholder="Cantidad" />
                     </div>
                     <div className="form-group mt-3">
                         <input onChange={this.cambio} type="text" name="imagen" className="form-control" placeholder="Imagen tarjeta" />
                     </div>
                     <div className="form-group mt-3">
-                        <h5 className="text-white">Prioridad</h5>
-                        <select onChange={this.cambio} name="prioridad" className="form-control">
-                            <option>Baja</option>
-                            <option>Media</option>
-                            <option>Alta</option>
+                        <h5 className="text-dark">Valor</h5>
+                        <select onChange={this.cambio} name="valor" className="form-control">
+                            <option>Bajo</option>
+                            <option>Medio</option>
+                            <option>Alto</option>
                         </select>
                     </div>
-                    <div><button className="btn btn-primary mt-3" type="button" onClick={this.guardar}>Guardar</button></div>
+                    <div><button className="btn btn-primary mt-3" type="button" onClick={this.guardar}>Crear Articulo</button></div>
                     
                 </form>
             </div>

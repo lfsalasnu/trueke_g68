@@ -4,7 +4,7 @@ class Encabezado extends Component{
     render(){
         return(
             <div className="bg-dark">
-                <img className="mx-auto center d-block" height="200" width="auto" src={process.env.PUBLIC_URL + "./Recursos/trueke.png"} />
+                <img className="mx-auto center d-block mt-4 mb-4" height="200" width="auto" src={process.env.PUBLIC_URL + "./Recursos/logo3.png"} />
             </div>
         );
     }

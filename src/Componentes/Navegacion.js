@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import App from "../App";
+//import App from "../App";
 class Navegacion extends Component {
     render() {
         return (
@@ -32,7 +32,7 @@ class Navegacion extends Component {
                 <div className="tab-content" id="myTabContent">
 
                     <div className="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        <App />
+                        {this.props.articulos}
                     </div>
                     <div className="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                         <h1 className="text-white">{this.props.formularioct}</h1>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 //import img1 from "./recursos/img1.png";
-class Tarjetas extends Component {
+class Articulo extends Component {
     editar(){
         alert('Editar')
     }
@@ -13,8 +13,8 @@ class Tarjetas extends Component {
         //this.props.imagen
         //let ima process.env.PUBLIC_URL
         return (
-            <div className="col-sm-4 mt-4">
-                <div className="card" key={this.props.i}>
+            <div className="col-sm-4 mt-4 text-center">
+                <div className="card bg-dark border-white text-white" key={this.props.i}>
                     <img src={process.env.PUBLIC_URL+this.props.imagen} height="300" width="auto" className="card-img-top" alt={this.props.i} />
                     <div className="card-body">
                         <h5 className="card-title">{this.props.titulo}</h5>
@@ -35,4 +35,4 @@ class Tarjetas extends Component {
     }
 }
 
-export default Tarjetas;
+export default Articulo;

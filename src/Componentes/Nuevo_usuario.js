@@ -6,12 +6,13 @@ class Nuevo_usuario extends Component{
     constructor(){
         super()
         this.state={
-            titulo:'',
-            descripcion:'',
-            prioridad:'baja',
-            numero:0,
-            responsable:'',
-            imagen:''
+            nombre:'',
+            apellido:'',
+            ciudad:'',
+            edad:0,
+            correo:'',
+            cont1:'',
+            cont2:''
         }
         this.ntarj=<h1>Hola</h1>;
         this.cambio=this.cambio.bind(this);
@@ -39,29 +40,33 @@ class Nuevo_usuario extends Component{
                 <h1 className="mx-auto text-primary">Nuevo Usuario</h1>
                 <form className="card-body">
                     <div className="form-group">
-                        <input onChange={this.cambio} type="text" name="titulo" className="form-control" placeholder="Titulo tarjeta" />
+                        <input onChange={this.cambio} type="text" name="nombre" className="form-control" placeholder="Nombres" />
                     </div>
                     <div className="form-group mt-3">
-                        <textarea onChange={this.cambio} type="text" name="descripcion" className="form-control" placeholder="Descripción tarjeta" rows={3}></textarea>
+                        <input onChange={this.cambio} type="text" name="apellido" className="form-control" placeholder="Apellidos" />
                     </div>
                     <div className="form-group mt-3">
-                        <input onChange={this.cambio} type="text" name="responsable" className="form-control" placeholder="Responsable tarjeta" />
+                        <input onChange={this.cambio} type="number" name="edad" className="form-control" placeholder="Edad" />
                     </div>
                     <div className="form-group mt-3">
-                        <input onChange={this.cambio} type="number" name="numero" className="form-control" placeholder="numero tarjeta" />
-                    </div>
-                    <div className="form-group mt-3">
-                        <input onChange={this.cambio} type="text" name="imagen" className="form-control" placeholder="Imagen tarjeta" />
-                    </div>
-                    <div className="form-group mt-3">
-                        <h5 className="text-white">Prioridad</h5>
-                        <select onChange={this.cambio} name="prioridad" className="form-control">
-                            <option>Baja</option>
-                            <option>Media</option>
-                            <option>Alta</option>
+                        <h5 className="mx-auto text-dark">Ciudad</h5>
+                        <select onChange={this.cambio} name="ciudad" className="form-control">
+                            <option>Barranquilla</option>
+                            <option>Bogotá</option>
+                            <option>Medellín</option>
+                            <option>Pereira</option>
                         </select>
                     </div>
-                    <div><button className="btn btn-primary mt-3" type="button" onClick={this.guardar}>Guardar</button></div>
+                    <div className="form-group mt-3">
+                        <input onChange={this.cambio} type="email" name="correo" className="form-control" placeholder="Correo" />
+                    </div>
+                    <div className="form-group mt-3">
+                        <input onChange={this.cambio} type="password" name="cont1" className="form-control" placeholder="Contraseña" />
+                    </div>
+                    <div className="form-group mt-3">
+                        <input onChange={this.cambio} type="password" name="cont2" className="form-control" placeholder="Repetir Contraseña" />
+                    </div>
+                    <div><button className="btn btn-primary mt-3" type="button" onClick={this.guardar}>Crear Usuario</button></div>
                     
                 </form>
             </div>
