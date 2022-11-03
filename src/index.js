@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Encabezado />
-    <Navegacion enlace1="Inicio" articulos={<Cargar />} enlace2="Crear Articulo" formularioct={<Formulario />} enlace3="Inicio Sesión" inicio_sesion={<Inicio_sesion/>} enlace4="Crear usuario" nuevo_usuario={<Nuevo_usuario />}/>
+    <Navegacion enlace1="Inicio" enlace2="Crear Articulo" formularioct={<Formulario />} enlace3="Inicio Sesión" inicio_sesion={<Inicio_sesion/>} enlace4="Crear usuario" nuevo_usuario={<Nuevo_usuario />}/>
     
     <Pie_pagina/>
   </React.StrictMode>

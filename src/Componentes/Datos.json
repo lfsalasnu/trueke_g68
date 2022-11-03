@@ -1,34 +1,34 @@
 [
     {
-        "titulo": "Titulo 1",
-        "descripcion": "Descripción Titulo 1",
-        "numero": 10,
-        "Prioridad":"Alta",
-        "Responsable":"Fernando",
+        "nombre": "Lamina Luka Modric",
+        "descripcion": "Lamina panini Qatar 2022 leyenda Croacia Luka Modric",
+        "cantidad": 1,
+        "valor":"Alto",
+        "usuario":"Fernando",
         "imagen":"/Recursos/img1.jpg"
     },
     {
-        "titulo": "Titulo 2",
-        "descripcion": "Descripción Titulo 2",
-        "numero": 20,
-        "Prioridad":"Baja",
-        "Responsable":"Paula",
+        "nombre": "Lamina Luis Suarez",
+        "descripcion": "Lamina panini Qatar 2022 leyenda Uruguay Luis Suarez",
+        "cantidad": 1,
+        "valor":"Alto",
+        "usuario":"Paula",
         "imagen":"/Recursos/img2.jpg"
     },
     {
-        "titulo": "Titulo 3",
-        "descripcion": "Descripción Titulo 3",
-        "numero": 30,
-        "Prioridad":"Media",
-        "Responsable":"Andres",
+        "nombre": "Libro Después",
+        "descripcion": "Después es una novela policial del escritor Stephen King. Fue publicada originalmente el 2 de marzo de 2021 en idioma inglés y el 21 de junio en idioma español.",
+        "cantidad": 3,
+        "valor":"Medio",
+        "usuario":"Andres",
         "imagen":"/Recursos/despues.webp"
     },
     {
-        "titulo": "Titulo 4",
-        "descripcion": "Descripción Titulo 4",
-        "numero": 40,
-        "Prioridad":"Alta",
-        "Responsable":"Luis",
+        "nombre": "Libro Dracula",
+        "descripcion": "Drácula, es una novela de fantasía gótica escrita por Bram Stoker, publicada en 1897. ​​ Publicada en castellano por Ediciones Hymsa bajo la colección ‘La novela aventura’ en 1935.",
+        "cantidad": 2,
+        "valor":"Bajo",
+        "usuario":"Luis",
         "imagen":"/Recursos/dracula.webp"
     }
 ]

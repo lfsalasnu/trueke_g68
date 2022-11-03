@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Cargar from "./Cargar";
 //import App from "../App";
 class Navegacion extends Component {
     render() {
@@ -24,7 +25,7 @@ class Navegacion extends Component {
                     </form>
                     <ul>
                     <li className="nav-item" role="presentation">
-                        <h6 className="ms-5 float-right text-primary">Usuario No identificado</h6>    
+                        <h6 className="ms-5 float-right text-primary">Usuario: Luis</h6>    
                     </li>
                     </ul>
                     
@@ -32,7 +33,7 @@ class Navegacion extends Component {
                 <div className="tab-content" id="myTabContent">
 
                     <div className="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        {this.props.articulos}
+                    <Cargar />
                     </div>
                     <div className="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                         <h1 className="text-white">{this.props.formularioct}</h1>

@@ -5,24 +5,19 @@ class Cargar extends Component{
     constructor(){
         super();
         this.state={Datos};
-        //console.log(this.state);
+        //console.log(this.state.datos);
     }
-
     render(){
-        let mostrar=this.state.Datos.map((dato,i)=>{
-            return(
-                
-                <Articulo titulo={dato.titulo} descripcion={dato.descripcion} numero={dato.numero}  prioridad={dato.Prioridad} responsable={dato.Responsable} imagen={dato.imagen} i={i}/>
-                // <div>
-                //       
-                // </div>
-            );
-        })
+        const datos= this.state.Datos.map((dato)=>{return(
+        <Articulo nombre={dato.nombre} descripcion={dato.descripcion} imagen={dato.imagen} valor={dato.valor} cantidad={dato.cantidad} usuario={dato.usuario}/>
+        );
+    })
+        //const datos= <Tarjeta titulo="prueba"/>
         return(
             <div className="row">
-                {mostrar}
+            {datos}
             </div>
-        );
+            );
     }
 
 }
